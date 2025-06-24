@@ -11,60 +11,6 @@ And using in (1) `n01440764` - containing **real** images for RealYoutube
 **Important!!** <br />
 Download and extract **weights.zip** in the same folder as `evaluate.py`
 
-# Installation Guide
-This code is built on top of [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch), so you need to install the `dassl` environment first. `cd` to `dassl` folder and simply follow the instructions described below: 
-
-```bash
-# Clone this repo
-git clone https://github.com/sohailahmedkhan/CLIPping-the-Deception.git
-cd CLIPping-the-Deception/
-cd dassl/
-
-# Create a conda environment
-conda create -y -n dassl python=3.8
-
-# Activate the environment
-conda activate dassl
-
-# Install torch (requires version >= 1.8.1) and torchvision
-# Please refer to https://pytorch.org/ if you need a different cuda version
-conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install this library (no need to re-build if the source code is modified)
-python setup.py develop
-
-cd..
-
-data/
-└── progan_train/
-    ├── classnames.txt
-    ├── images/
-    │   ├── train/
-    │   │   ├── n01440764/
-    │   │   │   ├── image1.jpg
-    │   │   │   ├── image2.jpg
-    │   │   │   └── ...
-    │   │   ├── n01443537/
-    │   │   │   ├── image1.jpg
-    │   │   │   ├── image2.jpg
-    │   │   │   └── ...
-    │   ├── val/
-    │   │   ├── n01440764/
-    │   │   │   ├── image1.jpg
-    │   │   │   ├── image2.jpg
-    │   │   │   └── ...
-    │   │   ├── n01443537/
-    │   │   │   ├── image1.jpg
-    │   │   │   ├── image2.jpg
-    │   │   │   └── ...
-
-`````
-
-`n01440764` refers to **real** images, whereas, `n01443537` contains **fake** images.
-
 # Result 
 <img width="260" alt="Screenshot 2025-06-24 at 14 11 10" src="https://github.com/user-attachments/assets/1f8c3b7c-e54f-4d4e-bd01-5746b2aa1508" />
 
