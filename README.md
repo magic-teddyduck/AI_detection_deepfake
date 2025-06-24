@@ -3,6 +3,8 @@ The evaluation dataset can be found [here](https://www.dropbox.com/t/2Amyu4D5Tul
 And using in (1) `n01440764` - containing **real** images for RealYoutube
              (2) `n01443537` - containing **fake** images for FaceSwap
 
+  mkdir
+
 ## Evaluation Dataset
 The evaluation dataset can be found [here](https://www.dropbox.com/t/2Amyu4D5TulaIofv).
 And using in (1) `n01440764` - containing **real** images for RealYoutube
