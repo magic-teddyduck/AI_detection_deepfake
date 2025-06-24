@@ -3,12 +3,20 @@ The evaluation dataset can be found [here](https://www.dropbox.com/t/2Amyu4D5Tul
 And using in (1) `n01440764` - containing **real** images for RealYoutube
              (2) `n01443537` - containing **fake** images for FaceSwap
 
-  mkdir
+%mkdir data/progan_train/images/train/{n01440764, n01443537}
+%mkdir data/progan_train/images/val/{n01440764, n01443537}
+
+and put all real .png in n01440764, put all fake .png in n01443537
 
 ## Evaluation Dataset
 The evaluation dataset can be found [here](https://www.dropbox.com/t/2Amyu4D5TulaIofv).
 And using in (1) `n01440764` - containing **real** images for RealYoutube
              (2) `n01443537` - containing **fake** images for NeuralTextures
+
+%mkdir test_data/progan/images/train/{n01440764, n01443537}
+%mkdir test_data/progan/images/val/{n01440764, n01443537}
+
+and put all real .png in n01440764, put all fake .png in n01443537
 
 **Important!!** <br />
 Download and extract **weights.zip** in the same folder as `evaluate.py`
